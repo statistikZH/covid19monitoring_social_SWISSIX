@@ -3,7 +3,7 @@
 Täglich aktualisierte Daten zum Internetverkehr, welcher über [SwissIX](https://www.swissix.ch/), dem grössten Internet-Exchange-Dienst in der Schweiz geht. SwissIX stellt die Infrastruktur für den Austausch von Datenpaketen zwischen den Netzen der einzelnen Internet-Provider bereit.
 
 ## Methodisches
-Das R-Skript `prepareData.R` dient zum Generieren der erforderlichen Datenstruktur und des Datenfiles `Social_SWISSIX.csv.`
+Das R-Skript `Social_SWISSIX.R` dient zum Generieren der erforderlichen Datenstruktur und des Datenfiles `Social_SWISSIX.csv.`
 Das Datenfile wird in der Regel täglich automatisch aktualisiert. Der letzte im Datenfilen enthaltene Tag liegt 1 bis 2 Tage hinter dem aktuellen Datum zurück.
 
 ## Weitere Hinweise zur Variable
