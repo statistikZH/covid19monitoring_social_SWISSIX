@@ -1,6 +1,4 @@
 
-# Gesellschaftsmonitoring COVID19, Daten SwissIX
-
 ## Grundlage
 Täglich aktualisierte Daten zum Internetverkehr, welcher über [SwissIX](https://www.swissix.ch/), dem grössten Internet-Exchange-Dienst in der Schweiz geht. SwissIX stellt die Infrastruktur für den Austausch von Datenpaketen zwischen den Netzen der einzelnen Internet-Provider bereit.
 
