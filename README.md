@@ -1,3 +1,4 @@
+# covid19monitoring_social_SWISSIX
 
 ## Grundlage
 Täglich aktualisierte Daten zum Internetverkehr, welcher über [SwissIX](https://www.swissix.ch/), dem grössten Internet-Exchange-Dienst in der Schweiz geht. SwissIX stellt die Infrastruktur für den Austausch von Datenpaketen zwischen den Netzen der einzelnen Internet-Provider bereit.
@@ -13,8 +14,6 @@ Der tägliche Spitzen-Verkehr am Abend sei deshalb zwischenzeitlich wegen Videos
 [Weiterführende Informationen](https://www.tagesanzeiger.ch/was-der-datenverkehr-ueber-unser-verhalten-verraet-436727633329)
 
 ## Weitere Informationen
-[Projektseite](https://github.com/statistikZH/covid19monitoring)
-
-[Datenbezug](https://www.web.statistik.zh.ch/covid19_indikatoren_uebersicht/#/)
-
-[Nutzungsbedingungen](https://github.com/openZH/covid_19/blob/master/LICENSE)
+[Projektseite: "Gesellschafsmonitoring COVID19"](https://github.com/statistikZH/covid19monitoring) <br>
+[Datenbezug](https://www.web.statistik.zh.ch/covid19_indikatoren_uebersicht/#/) <br>
+[Visualisierung](https://www.web.statistik.zh.ch/cms_vis/covid19_indikatoren/) <br>
