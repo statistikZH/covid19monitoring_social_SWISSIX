@@ -24,7 +24,7 @@ data <- read_csv(url(url_dat))
 
 ## Visualization 1 - Daily volume
 
-```{r visualisation daily, fig.height=8, fig.width=12, echo=FALSE}
+```{r visualisation days, fig.height=8, fig.width=12, echo=FALSE}
 
 ggplot(data, aes(x=date, y=value/8)) + geom_point(color = "#FF6666", alpha = 0.7) +
   geom_path(color = "#FF6666", alpha = 0.7) +
@@ -40,7 +40,7 @@ ggplot(data, aes(x=date, y=value/8)) + geom_point(color = "#FF6666", alpha = 0.7
 
 ## Visualization 2 - Weekly Volume
 
-```{r visualisation weekly, fig.height=8, fig.width=12}
+```{r visualisation weeks, fig.height=8, fig.width=12}
 
 # Data prep
 data_wk <- data %>% select(date, value) %>%

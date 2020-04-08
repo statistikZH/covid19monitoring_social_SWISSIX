@@ -3,8 +3,8 @@
 ###############################################################################
 
 # Import libraries
-library(dplyr) # Version >= 0.8.5
-library(assertthat) # Version >= 0.2.1
+library(dplyr) # Version >= ‘0.8.5’
+library(assertthat) # Version >= ‘0.2.1’
 
 # Number formatting
 options(scipen = 1000000)
