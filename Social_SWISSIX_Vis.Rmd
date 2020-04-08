@@ -14,9 +14,9 @@ library(statR)
 
 ## Data Import
 
-```{r cars}
+```{r data import}
 
-url_dat <- "https://raw.githubusercontent.com/CGRBZH/covid19_soc_swissix/master/Social_SWISSIX.csv"
+url_dat <- "https://raw.githubusercontent.com/statistikZH/covid19monitoring_social_SWISSIX/master/Social_SWISSIX.csv"
 
 data <- read_csv(url(url_dat))
 
@@ -24,7 +24,7 @@ data <- read_csv(url(url_dat))
 
 ## Visualization 1 - Daily volume
 
-```{r vis daily, fig.height=8, fig.width=12, echo=FALSE}
+```{r visualisation daily, fig.height=8, fig.width=12, echo=FALSE}
 
 ggplot(data, aes(x=date, y=value/8)) + geom_point(color = "#FF6666", alpha = 0.7) +
   geom_path(color = "#FF6666", alpha = 0.7) +
@@ -36,13 +36,11 @@ ggplot(data, aes(x=date, y=value/8)) + geom_point(color = "#FF6666", alpha = 0.7
   theme_stat() +
   theme(panel.grid.major.x = element_line(linetype = "solid", size = 0.25, color = "grey"))
 
-# ggsave("swissix_daily.png", width = 24, height = 8, units = "cm")
-
 ```
 
 ## Visualization 2 - Weekly Volume
 
-```{r vis weekly, fig.height=8, fig.width=12}
+```{r visualisation weekly, fig.height=8, fig.width=12}
 
 # Data prep
 data_wk <- data %>% select(date, value) %>%
@@ -59,8 +57,6 @@ ggplot(data_wk, aes(week)) +
        y = "Terabyte") +
   ylim(c(0, 15000)) +
   theme_stat()
-
-# ggsave("swissix_weekly.png", width = 28, height = 18, units = "cm")
 
 ```
 
