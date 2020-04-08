@@ -1,48 +1,22 @@
 
 # Gesellschaftsmonitoring COVID19, Daten SwissIX
 
-Daten zum täglichen Datenvolumen über [SwissIX Swiss Internet Exchange](https://www.swissix.ch/) im Rahmen des Projekts [Gesellschaftsmonitoring COVID19](https://statistikzh.github.io/covid19monitoring/)
+## Grundlage
+Täglich aktualisierte Daten zum Internetverkehr, welcher über [SwissIX](https://www.swissix.ch/), dem grössten Internet-Exchange-Dienst in der Schweiz geht. SwissIX stellt die Infrastruktur für den Austausch von Datenpaketen zwischen den Netzen der einzelnen Internet-Provider bereit.
 
-## Datenlieferant
+## Methodisches
+Das R-Skript `prepareData.R` dient zum Generieren der erforderlichen Datenstruktur und des Datenfiles `Social_SWISSIX.csv.`
+Das Datenfile wird in der Regel täglich automatisch aktualisiert. Der letzte im Datenfilen enthaltene Tag liegt 1 bis 2 Tage hinter dem aktuellen Datum zurück.
 
-[source] SwissIX Swiss Internet Exchange
+## Weitere Hinweise zur Variable
+Die täglich aktualisierten Daten von Swiss IX zeigen, dass der Internetverkehr bereits eine Woche vor dem Lockdown vom Montag, 16. März, sprunghaft und nachhaltig angestiegen ist. «Damals hat ein grosser Streaming-Anbieter einen Teil seines Verkehrs über unsere Infrastruktur umgeleitet», erklärt Christian Wittenhorst, Swiss-IX-Chef. 
 
-## Beteiligte
+Der tägliche Spitzen-Verkehr am Abend sei deshalb zwischenzeitlich wegen Videostreaming und Gaming merklich erhöht gewesen, habe sich inzwischen aber wieder bei den Vor-Corona-Werten eingependelt. Dies dürfte die Folge der Reduktion der Streaming-Bandbreiten von Netflix und anderen sein, schätzt der Swiss-IX-Chef. 
+[Weiterführende Informationen](https://www.tagesanzeiger.ch/was-der-datenverkehr-ueber-unser-verhalten-verraet-436727633329)
 
-Corinna Grobe <corinna.grobe@statistik.ji.zh.ch>, Statistisches Amt Kanton Zürich
+## Weitere Informationen
+[Projektseite](https://github.com/statistikZH/covid19monitoring)
 
+[Datenbezug](https://www.web.statistik.zh.ch/covid19_indikatoren_uebersicht/#/)
 
-## Indikatorbeschreibung
-
-[topic] Soziales
-
-[variable_short] internet_datenvolumen
-
-[variable_long] Internet-Datenvolumen
-
-[location] CH
-
-[unit] Terabit pro Tag
-
-[update] täglich
-
-[description] https://github.com/CGRBZH/covid19_soc_swissix (to change)
-
-## Open data
-
-Kann die Variable OGD gestellt werden?
-
-[public] Ja
-
-## Struktur der Basisdaten:
-
-Datei `https://ixpmanager.swissix.ch/swissix_daily_volume.txt`
-
-* `date`: Datum, Format yyyy-mm-dd
-* `value`: Terabit
-
-## Vorgehen
-
-* Automatisches Update des Datenfiles `swissix_daily_volume.txt` durch SwissIX, in der Regel täglich mit.
-* Letzter Tag im Datenfile liegt 1 bis 2 Tage zurück.
-* R-Skript `prepareData.R` zum Generieren der erforderlichen Datenstruktur.
+[Nutzungsbedingungen](https://github.com/openZH/covid_19/blob/master/LICENSE)
