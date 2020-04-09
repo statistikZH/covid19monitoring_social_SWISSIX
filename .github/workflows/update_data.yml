@@ -4,7 +4,7 @@ name: Update data
 
 on:
   schedule:
-    - cron:  '35 8 * * *' # everyday at 06:05 UTC # 
+    - cron:  '45 8 * * *' # everyday at 06:05 UTC # 
 
 #push:
 #    paths:
@@ -34,4 +34,4 @@ jobs:
     - uses: stefanzweifel/git-auto-commit-action@v4.1.1
       with:
         commit_message: Update csv
-branch: ${{ github.head_ref }}
+        branch: ${{ github.head_ref }}
